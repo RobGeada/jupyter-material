@@ -1,5 +1,5 @@
 div#notebook {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  line-height: 170%;
  color: #ffffff;
@@ -8,7 +8,7 @@ div#notebook {
 }
 body,
 div.body {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 10pt;
  color: #ffffff;
  background-color: #263238;
@@ -23,7 +23,7 @@ body.notebook_app {
  overflow-y: hidden;
 }
 a {
- /*font-family: sans-serif;*/
+ /*font-family: Ubuntu, sans-serif;*/
  color: #ffffff;
  -webkit-font-smoothing: antialiased !important;
 }
@@ -131,7 +131,7 @@ div.running_list_info.toolbar_info {
  vertical-align: text-top;
 }
 .fa-folder:before {
- color: #82aaff;
+ color: #229487;
 }
 .fa-arrow-up:before {
  font-size: 14px;
@@ -151,7 +151,7 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
  content: "\f07b";
- color: #82aaff;
+ color: #229487;
 }
 .notebook_icon:before {
  display: inline-block;
@@ -186,13 +186,13 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  font-size: 14px;
 }
 div#notebook_toolbar div.dynamic-instructions {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 14px;
  color: #eeffff;
 }
 span#login_widget > .button,
 #logout {
- font-family: "Proxima Nova", sans-serif;
+ font-family: "Proxima Nova", Ubuntu, sans-serif;
  color: #ffffff;
  background: transparent;
  background-color: transparent;
@@ -377,14 +377,14 @@ div.list_item:hover {
  margin-top: -2px;
 }
 ul#tabs a {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 11pt;
  font-weight: normal;
  font-style: normal;
  text-shadow: none !important;
 }
 .nav-tabs {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13.5pt;
  font-weight: normal;
  font-style: normal;
@@ -445,7 +445,7 @@ ul#tabs a {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div#notebook {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  padding-top: 4px;
 }
@@ -488,7 +488,7 @@ div#header-container {
 }
 #header,
 .edit_app #header {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  box-shadow: none;
  background-color: #263238;
@@ -531,7 +531,7 @@ p.navbar-text.indicator_area {
  color: #546e7a;
 }
 .navbar-default {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 12pt;
  background-color: #263238;
  border-color: rgba(30,67,77,.3);
@@ -539,7 +539,7 @@ p.navbar-text.indicator_area {
  padding-bottom: 0px;
 }
 .navbar-default .navbar-nav > li > a {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  color: #ffffff;
  display: block;
@@ -640,27 +640,27 @@ div.notification_widget.info,
  color: #82aaff;
 }
 .running_notebook_icon:before {
- color: #c3e88d !important;
- font: normal normal normal 15px/1 FontAwesome;
- font-size: 15px;
+ display: inline-block;
+ font: normal normal normal 14px/1 FontAwesome;
+ font-size: inherit;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
  content: "\f02d";
- vertical-align: middle;
- position: static;
- display: inherit;
+ position: relative;
+ color: #C3E88D !important;
+ top: 0px;
 }
 .item_buttons .running-indicator {
  padding-top: 0px;
  padding-right: 10px;
- color: #c3e88d;
- font-family: sans-serif;
+ color: #C3E88D;
+ font-family: Ubuntu, sans-serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
 }
 #notification_trusted {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  border: none;
  background: transparent;
  background-color: transparent;
@@ -809,13 +809,13 @@ i.fa.fa-icon {
 }
 .fa {
  display: inline-block;
- font: normal normal normal 10pt/1 "FontAwesome", sans-serif;
+ font: normal normal normal 10pt/1 "FontAwesome", Ubuntu, sans-serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
 }
 .dropdown-menu {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  box-shadow: none;
  padding: 0px;
@@ -826,7 +826,7 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu:hover {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  box-shadow: none;
  padding: 0px;
@@ -837,7 +837,7 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu > li > a {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 10.0pt;
  display: block;
  padding: 10px 20px 9px 10px;
@@ -871,7 +871,7 @@ i.fa.fa-icon {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 10.0pt;
  font-weight: normal;
  color: #eeffff;
@@ -901,7 +901,7 @@ div.kse-dropdown > .dropdown-menu,
 }
 .btn,
 .btn-default {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  color: #ffffff;
  background: #2e3c43;
  background-color: #2e3c43;
@@ -1108,7 +1108,7 @@ div.dynamic-buttons > button,
  z-index: 2;
 }
 .dropdown-header {
- font-family: sans-serif !important;
+ font-family: Ubuntu, sans-serif !important;
  font-size: 13pt !important;
  color: #546e7a !important;
  border-bottom: none !important;
@@ -1118,7 +1118,7 @@ div.dynamic-buttons > button,
 span#last-modified.btn.btn-xs.btn-default.sort-action,
 span#sort-name.btn.btn-xs.btn-default.sort-action,
 span#file-size.btn.btn-xs.btn-default.sort-action {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 16px;
  background-color: transparent;
  background: transparent;
@@ -1133,7 +1133,7 @@ span#last-modified.btn.btn-xs.btn-default.sort-action {
 }
 button.close {
  border: 0px none;
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 20pt;
  font-weight: normal;
 }
@@ -1252,7 +1252,7 @@ div.modal-footer > button:hover {
  transition: 200ms ease;
 }
 .modal-content {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 12.0pt;
  position: relative;
  background: #242f35;
@@ -1263,7 +1263,7 @@ div.modal-footer > button:hover {
  outline: none;
 }
 .modal-header {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  color: #ffffff;
  background: #242f35;
@@ -1273,7 +1273,7 @@ div.modal-footer > button:hover {
  min-height: 16.4286px;
 }
 .modal-content h4 {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 16pt;
  color: #ffffff;
  padding: 5px;
@@ -1307,7 +1307,7 @@ div.panel,
 div.panel-default,
 .panel,
 .panel-default {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  background-color: #2e3c43;
  color: #ffffff;
@@ -1335,7 +1335,7 @@ div.container-fluid {
 }
 div.form-control,
 .form-control {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: initial;
  color: #ffffff;
  background-color: #34444c;
@@ -1782,7 +1782,7 @@ div.cell.selected .out_prompt_overlay.prompt {
 div.text_cell,
 div.text_cell_render pre,
 div.text_cell_render {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  line-height: 130% !important;
  color: #ffffff;
@@ -1813,28 +1813,28 @@ div.cell.text_cell .CodeMirror pre {
  line-height: 170% !important;
 }
 div.cell.text_cell.rendered.selected {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  line-height: 170% !important;
  background: #2e3c43;
  background-color: #2e3c43;
  border-radius: 0px;
 }
 div.cell.text_cell.unrendered.selected {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  line-height: 170% !important;
  background: #2e3c43;
  background-color: #2e3c43;
  border-radius: 0px;
 }
 div.cell.text_cell.selected {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  line-height: 170% !important;
  background: #2e3c43;
  background-color: #2e3c43;
  border-radius: 0px;
 }
 .edit_mode div.cell.text_cell.selected {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  line-height: 170% !important;
  background: #2e3c43;
  background-color: #2e3c43;
@@ -1843,7 +1843,7 @@ div.cell.text_cell.selected {
 div.text_cell.unrendered,
 div.text_cell.unrendered.selected,
 div.edit_mode div.text_cell.unrendered {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  line-height: 170% !important;
  background: #2e3c43;
  background-color: #2e3c43;
@@ -1982,7 +1982,7 @@ div.text_cell_render h4,
 div.rendered_html h4,
 div.text_cell_render h5,
 div.rendered_html h5 {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  margin: 0.4em .2em .3em .2em !important;
 }
 .rendered_html h1:first-child,
@@ -1996,7 +1996,7 @@ div.rendered_html h5 {
 }
 .rendered_html h1,
 .text_cell_render h1 {
- color: #ffcb6b !important;
+ color: #C3E88D!important;
  font-size: 180%;
  text-align: left;
  font-style: normal;
@@ -2004,28 +2004,28 @@ div.rendered_html h5 {
 }
 .rendered_html h2,
 .text_cell_render h2 {
- color: #ffcb6b !important;
+ color: #C3E88D !important;
  font-size: 150%;
  font-style: normal;
  font-weight: normal;
 }
 .rendered_html h3,
 .text_cell_render h3 {
- color: #ffcb6b !important;
+ color: #C3E88D !important;
  font-size: 120%;
  font-style: normal;
  font-weight: normal;
 }
 .rendered_html h4,
 .text_cell_render h4 {
- color: #ffcb6b !important;
+ color: #C3E88D !important;
  font-size: 110%;
  font-style: normal;
  font-weight: normal;
 }
 .rendered_html h5,
 .text_cell_render h5 {
- color: #ffcb6b !important;
+ color: #C3E88D !important;
  font-size: 100%;
  font-style: normal;
  font-weight: normal;
@@ -2034,7 +2034,7 @@ hr {
  margin-top: 8px;
  margin-bottom: 10px;
  border: 0;
- border-top: 1px solid #ffcb6b;
+ border-top: 1px solid #C3E88D;
 }
 .rendered_html hr {
  color: #ffcb6b;
@@ -2066,11 +2066,11 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  border: none;
 }
 .rendered_html td {
- font-family: sans-serif !important;
+ font-family: Ubuntu, sans-serif !important;
  font-size: 9.3pt;
 }
 .rendered_html table {
- font-family: sans-serif !important;
+ font-family: Ubuntu, sans-serif !important;
  margin-left: 8px;
  margin-right: auto;
  border: none;
@@ -2080,7 +2080,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  table-layout: fixed;
 }
 .rendered_html thead {
- font-family: sans-serif !important;
+ font-family: Ubuntu, sans-serif !important;
  font-size: 10.3pt !important;
  background: #202a2f;
  color: #eeffff;
@@ -2108,7 +2108,7 @@ div.widget-area {
  color: #ffffff;
 }
 div.widget-area a {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 12.0pt;
  font-weight: normal;
  font-style: normal;
@@ -2117,7 +2117,7 @@ div.widget-area a {
 }
 div.widget-area a:hover,
 div.widget-area a:focus {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 12.0pt;
  font-weight: normal;
  font-style: normal;
@@ -2189,7 +2189,7 @@ div.widget-label {
  margin-left: 12px;
 }
 .rendered_html :link {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 100%;
  color: #546e7a;
  text-decoration: underline;
@@ -2201,7 +2201,7 @@ div.widget-label {
 }
 .rendered_html :visited:hover,
 .rendered_html :link:hover {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 100%;
  color: #375c6e;
 }
@@ -2244,7 +2244,7 @@ div#nbextensions-configurator-container.container,
  margin-left: 20px;
 }
 div.nbext-selector > nav > .nav > li > a {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 10.5pt;
  padding: 2px 5px;
 }
@@ -2270,7 +2270,7 @@ div.nbext-selector > nav > .nav > li.active:hover {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div.nbext-readme > .nbext-readme-contents > .rendered_html {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 11.5pt;
  line-height: 145%;
  padding: 1em 1em;
@@ -2574,7 +2574,7 @@ video {
  z-index: 1;
 }
 .typeahead-field input {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  color: #ffffff;
  border: none;
  font-size: 28pt;
@@ -2592,7 +2592,7 @@ body > div.modal.cmd-palette.typeahead-field {
  background-color: #2e3c43;
 }
 .typeahead-container button {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 28pt;
  background-color: #242f35;
  border: none;
@@ -2627,7 +2627,7 @@ body > div.modal.cmd-palette.typeahead-field {
 }
 .typeahead-dropdown,
 .typeahead-list {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-size: 13pt;
  color: #ffffff;
  background-color: #34444c;
@@ -3130,7 +3130,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
  color: #82aaff;
 }
 div.cell.text_cell .cm-s-default .cm-header {
- font-family: sans-serif;
+ font-family: Ubuntu, sans-serif;
  font-weight: normal;
  color: #ffcb6b !important;
  margin-top: 0.3em !important;
