@@ -20,7 +20,7 @@
   --base06: 	#EEFFFF/**/;
   --base07: 	#FFFFFF/**/;
   --theme: 		#FFCB6B/**/;
-  --theme_a1: 	#FFCB6Baa/**/;
+  --theme_a1: #FFCB6Baa/**/;
   --theme_a2:	#FFCB6B33/**/;
 }
 
@@ -58,18 +58,20 @@ a {
 }
 a:hover,
 a:focus {
- color: #b2ccd6;
+ color: var(--theme);
  -webkit-font-smoothing: antialiased !important;
 }
 
 div#maintoolbar {
  position: absolute;
- width: -webkit-calc(100% - 13px);
+ width: content;
  margin-left: -10%;
  padding-right: 11px;
  float: left;
- background: #263238aa; !important;
+ background: #263238cc;
+ backdrop-filter: blur(10px);
 }
+
 #maintoolbar {
  margin-bottom: -3px;
  margin-top: 0px;
@@ -225,6 +227,7 @@ div#notebook_toolbar div.dynamic-instructions {
 
 span#login_widget > .button,
 #logout {
+ display: none !important;
  font-family: "Proxima Nova", Ubuntu, sans-serif;
  color: #ffffff;
  background: transparent;
@@ -239,6 +242,7 @@ span#login_widget > .button,
 }
 span#login_widget > .button:hover,
 #logout:hover {
+ display: none !important;
  color: #b2ccd6;
  background-color: transparent;
  background: transparent;
@@ -267,7 +271,7 @@ span#login_widget > .button.active,
 }
 body > #header #header-container {
  padding-bottom: 0px;
- padding-top: 4px;
+ padding-top: 10px;
  box-sizing: border-box;
  -moz-box-sizing: border-box;
  -webkit-box-sizing: border-box;
@@ -534,6 +538,27 @@ body > #header .header-bar {
  width: 100%;
  background: #263238;
 }
+span.save_widget {
+  width: 100px;
+  height: 15pt;
+}
+span.save_widget span.filename {
+  margin-left: 8px; 
+  height: initial;
+  width: 300px;
+  font-size: 14pt; 
+  color: var(--theme); 
+  vertical-align: center;
+  background-color:#263238;
+}
+span.save_widget span.filename:hover {
+  color: white; 
+  background-color: #263238;
+}
+#menubar {
+  padding-top: 4px; 
+  background-color: #263238;
+}
 span.checkpoint_status,
 span.autosave_status {
  font-size: small;
@@ -554,13 +579,19 @@ div#menubar {
 .navbar {
  border: none;
 }
+span.navbar-text {
+  color: white !important;
+}
+button.btn.btn-default.navbar-btn.navbar-toggle:hover {
+  background-color: #314549;
+}
 div.navbar-text,
 .navbar-text,
 .navbar-text.indicator_area,
 p.navbar-text.indicator_area {
  margin-top: 8px !important;
  margin-bottom: 0px;
- color: #546e7a;
+ color: white;
 }
 .navbar-default {
  font-family: Ubuntu, sans-serif;
@@ -581,7 +612,7 @@ p.navbar-text.indicator_area {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
- color: #b2ccd6 !important;
+ color: #314549!important;
  background-color: rgba(30,67,77,.3) !important;
  border-color: rgba(30,67,77,.3) !important;
  line-height: 1.5em;
@@ -701,6 +732,7 @@ div.notification_widget.info,
  -webkit-font-smoothing: antialiased;
 }
 #notification_trusted {
+  display: none !important;
  font-family: Ubuntu, sans-serif;
  border: none;
  background: transparent;
@@ -836,8 +868,8 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn,
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn:hover,
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn:focus {
  color: #ffffff;
- background-color: #263238;
- border-color: #263238;
+ background-color: #314549;
+ border-color: #314549;
 }
 #notification_area,
 div.notification_area {
@@ -863,9 +895,18 @@ div#notification_kernel.notification_widget.btn.btn-xs.navbar-btn.undefined.warn
 #kernel_logo_widget .current_kernel_logo {
  display: none;
 }
-div#ipython_notebook {
- display: none;
+div#ipython_notebook > a > img {
+  display: none;
 }
+
+div#ipython_notebook > a::after {
+  font-family: FontAwesome;
+  content: "\f015";
+  vertical-align: middle;
+  color: var(--theme);
+  font-size:25px;
+}
+
 i.fa.fa-icon {
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
@@ -984,9 +1025,7 @@ div.kse-dropdown > .dropdown-menu,
 .open > .dropdown-toggle.btn:hover {
  color: #ffffff;
  border: 2px solid #324149;
- background-color: #324149;
  background: #324149;
- background-image: none;
  box-shadow: none !important;
  border-radius: 3px;
 }
@@ -1371,7 +1410,10 @@ div.modal-footer > button:hover {
 }
 .modal-backdrop,
 .modal-backdrop.in {
+ border-width: 0px;
  opacity: 0.5;
+ backdrop-filter: blur(2px);
+ transform: scale(1.1);
  background-color: notebook-bg;
 }
 div.panel,
@@ -2189,7 +2231,7 @@ div.widget-area a:focus {
  font-size: 12.0pt;
  font-weight: normal;
  font-style: normal;
- color: #b2ccd6;
+ color:var(--theme);
  background: rgba(30,67,77,.3);
  background-color: rgba(30,67,77,.3);
  border-color: transparent;
@@ -3305,9 +3347,6 @@ div#maintoolbar {
 }
 .toolbar.container {
  width: 100% !important;
-}
-#header-container {
- display: none !important;
 }
 
 <script>
