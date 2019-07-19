@@ -543,20 +543,36 @@ span.save_widget {
   height: 15pt;
 }
 span.save_widget span.filename {
+<<<<<<< HEAD
   margin-left: 8px;
   height: initial;
   width: 300px;
   font-size: 14pt;
   color: var(--theme);
+=======
+  margin-left: 8px; 
+  height: initial;
+  width: 300px;
+  font-size: 14pt; 
+  color: var(--theme); 
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
   vertical-align: center;
   background-color:#263238;
 }
 span.save_widget span.filename:hover {
+<<<<<<< HEAD
   color: white;
   background-color: #263238;
 }
 #menubar {
   padding-top: 4px;
+=======
+  color: white; 
+  background-color: #263238;
+}
+#menubar {
+  padding-top: 4px; 
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
   background-color: #263238;
 }
 span.checkpoint_status,
@@ -583,7 +599,11 @@ span.navbar-text {
   color: white !important;
 }
 button.btn.btn-default.navbar-btn.navbar-toggle:hover {
+<<<<<<< HEAD
   background-color: var(--base02);
+=======
+  background-color: #314549;
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
 }
 div.navbar-text,
 .navbar-text,
@@ -619,9 +639,15 @@ p.navbar-text.indicator_area {
  transition: 80ms ease;
 }
 .navbar-default .navbar-nav > li > a:focus {
+<<<<<<< HEAD
  color: var(--theme) !important;
  background-color: var(--base00)!important;
  border-color: var(--base00) !important;
+=======
+ color: #314549!important;
+ background-color: rgba(30,67,77,.3) !important;
+ border-color: rgba(30,67,77,.3) !important;
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
  line-height: 1.5em;
  transition: 80ms ease;
 }
@@ -875,8 +901,13 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn,
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn:hover,
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn:focus {
  color: #ffffff;
+<<<<<<< HEAD
  background-color: var(--base02);
  border-color: var(--base02);
+=======
+ background-color: #314549;
+ border-color: #314549;
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
 }
 #notification_area,
 div.notification_area {
@@ -958,10 +989,17 @@ i.fa.fa-icon {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
+<<<<<<< HEAD
  color: white;
  background-color: var(--base03);
  background: var(--base03);
  border-color: var(--base03);
+=======
+ color: #ffffff;
+ background-color: var(--theme);
+ background: var(--theme));
+ border-color: var(--theme);
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
  transition: 200ms ease;
 }
 .dropdown-menu .divider {
@@ -1030,8 +1068,13 @@ div.kse-dropdown > .dropdown-menu,
 .open > .dropdown-toggle.btn-default:hover,
 .open > .dropdown-toggle.btn:hover {
  color: #ffffff;
+<<<<<<< HEAD
  border: 2px solid var(--theme);
  background: var(--theme_a1);
+=======
+ border: 2px solid #324149;
+ background: #324149;
+>>>>>>> 5f616ca192a2b603ec979c19b3fc23b2b285c38b
  box-shadow: none !important;
  border-radius: 3px;
 }
