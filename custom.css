@@ -1842,6 +1842,7 @@ div.output_wrapper {
  left: 0px;
  margin-bottom: 0em;
  margin-top: 0em;
+ height: 100%;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
 }
@@ -2328,23 +2329,31 @@ div.widget-label {
  height: 22px;
  margin-bottom: 10px;
  padding-left: 10px;
- background-color: #d6d6d6 !important;
+ background-color: var(--base02) !important;
  border-radius: 2px;
  -webkit-box-shadow: none;
  box-shadow: none;
  z-index: 10;
 }
+.jupyter-widgets {
+  color: white !important;
+  margin: 0em 1em 0em 0em !important;
+}
+
+.progress-bar {
+ background-color: var(--theme) !important;
+}
 .progress-bar-danger {
- background-color: #ff5370 !important;
+ background-color: var(--red) !important;
 }
 .progress-bar-info {
- background-color: #82aaff !important;
+ background-color: var(--blue) !important;
 }
 .progress-bar-warning {
- background-color: #f78c6c !important;
+ background-color: var(--orange) !important;
 }
 .progress-bar-success {
- background-color: #c3e88d !important;
+ background-color: var(--green) !important;
 }
 .widget-select select {
  margin-left: 12px;
