@@ -68,7 +68,7 @@ div#maintoolbar {
  margin-left: -10%;
  padding-right: 11px;
  float: left;
- backdrop-filter: blur(10px);
+ /* backdrop-filter: blur(10px); */
 }
 
 #maintoolbar {
