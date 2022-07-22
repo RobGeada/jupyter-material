@@ -68,13 +68,13 @@ div#maintoolbar {
  margin-left: -10%;
  padding-right: 11px;
  float: left;
+ /*backdrop-filter: blur(2px);*/
  background: #263238cc;
- backdrop-filter: blur(10px);
 }
 
 #maintoolbar {
  margin-bottom: -3px;
- margin-top: 0px;
+ margin-top: 2px;
  border: 0px;
  min-height: 27px;
  padding-top: 2px;
@@ -520,7 +520,7 @@ div#header-container {
 .edit_app #header {
  box-shadow: none !important;
  background-color: #263238;
- border-bottom: 2px solid rgba(30,67,77,.3);
+ border-bottom: 2px solid var(--theme);
 }
 #header,
 .edit_app #header {
@@ -544,7 +544,7 @@ span.save_widget {
 }
 span.save_widget span.filename {
   margin-left: 8px; 
-  height: initial;
+  height: 15pt;
   width: 300px;
   font-size: 14pt; 
   color: var(--theme); 
@@ -612,9 +612,9 @@ p.navbar-text.indicator_area {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
- color: #314549!important;
- background-color: rgba(30,67,77,.3) !important;
- border-color: rgba(30,67,77,.3) !important;
+ color: #ffffff !important;
+ background-color: #314549 !important;
+ border-color: #314549 !important;
  line-height: 1.5em;
  transition: 80ms ease;
 }
@@ -1412,7 +1412,7 @@ div.modal-footer > button:hover {
 .modal-backdrop.in {
  border-width: 0px;
  opacity: 0.5;
- backdrop-filter: blur(2px);
+ /*backdrop-filter: blur(2px);*/
  transform: scale(1.1);
  background-color: notebook-bg;
 }
@@ -1811,7 +1811,7 @@ div.output_subarea.output_text {
 }
 div.output_area pre {
  font-family: monospace, monospace;
- font-size: 8.5pt !important;
+ font-size: 10pt !important;
  line-height: 151% !important;
  color: #ffffff;
  border-top-right-radius: 0px;
@@ -1827,8 +1827,14 @@ div.output_html {
  background-color: #263238;
  background: #263238;
 }
+
+div.output_area img {
+	width: 75%;
+}
+
 div.output_subarea {
  overflow-x: auto;
+ width: 200%;
  padding: 1.2em !important;
  -webkit-box-flex: 1;
  -moz-box-flex: 1;
@@ -1868,7 +1874,7 @@ div.out_prompt_overlay.prompt {
  color: transparent;
 }
 div.out_prompt_overlay.prompt:hover {
- background-color: #05262f;
+ background-color: var(--theme_a2);
  box-shadow: none !important;
  border: none;
  border-bottom-left-radius: 2px;
@@ -1876,7 +1882,7 @@ div.out_prompt_overlay.prompt:hover {
  -moz-border-radius: 2px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
- border-right: 2px solid #05262f !important;
+ border-right: 2px solid var(--theme_a2) !important;
 }
 div.cell.code_cell .output_prompt {
  border-right: 2px solid transparent;
@@ -2277,23 +2283,32 @@ div.widget-label {
  height: 22px;
  margin-bottom: 10px;
  padding-left: 10px;
- background-color: #d6d6d6 !important;
+ background-color: var(--base02) !important;
  border-radius: 2px;
  -webkit-box-shadow: none;
  box-shadow: none;
  z-index: 10;
 }
+.jupyter-widgets {
+  color: white !important;
+  margin: 0em 1em 0em 0em !important;
+}
+
+
+.progress-bar {
+  background-color: var(--theme) !important;
+}
 .progress-bar-danger {
- background-color: #ff5370 !important;
+ background-color: var(--red) !important;
 }
 .progress-bar-info {
- background-color: #82aaff !important;
+ background-color: var(--blue) !important;
 }
 .progress-bar-warning {
- background-color: #f78c6c !important;
+ background-color: var(--orange) !important;
 }
 .progress-bar-success {
- background-color: #c3e88d !important;
+ background-color: var(--green) !important;
 }
 .widget-select select {
  margin-left: 12px;
